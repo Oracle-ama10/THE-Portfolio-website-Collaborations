@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Phurinut teaja - Portfolio</title>
     <link rel="stylesheet" href="csss/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+        <div class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -21,6 +27,9 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </div>
             </ul>
             <div class="nav-toggle">
                 <span class="bar"></span>
@@ -30,19 +39,23 @@
         </div>
     </nav>
 
+        <div class="scroll-progress">
+        <div class="progress-bar"></div>
+        </div>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-            <p class="hero-subtitle">Full Stack Developer</p>
-            <p class="hero-description">I create beautiful and functional web applications</p>
+            <h1>Hello, I'm <span class="highlight">Phurinut teaja</span></h1>
+            <p class="hero-subtitle">Full Stack Developer?</p>
+            <p class="hero-description">I try my best to create and build a code that woke well and it easier to read them i read it my self.</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#projects" class="btn btn-primary">View My Works</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="images/profile.jpg" alt="Profile Picture">
+            <img src="images/Sin.jpg" alt="Profile Picture">
         </div>
     </section>
 
