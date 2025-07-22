@@ -87,6 +87,20 @@ body {
     color: white;
 }
 
+/* Typing Animation */
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
 .hero-content {
     flex: 1;
     max-width: 600px;
@@ -148,6 +162,17 @@ body {
 .btn-secondary:hover {
     background: white;
     color: #333;
+}
+
+.btn-home {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid --card-bg;
+}
+
+.btn-home:hover {
+    background: #ffffff;
+    color: #8e44ad
 }
 
 .hero-image {
@@ -298,6 +323,40 @@ body {
 .btn-small {
     padding: 8px 20px;
     font-size: 0.9rem;
+}
+
+.btn-live {
+    color: #b678d1;
+}
+
+/* Project Filter */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    color: #666;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #b678d1;
+    color: white;
+}
+
+.project-card.hide {
+    display: none;
 }
 
 /* Contact Section */
@@ -581,4 +640,33 @@ body {
     background: linear-gradient(90deg, #e666ea, #764ba2);
     width: 0%;
     transition: width 0.1s ease;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #b678d1;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: #a054c0;
+    transform: translateY(-2px);
 }

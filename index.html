@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phurinut teaja - Portfolio</title>
-    <link rel="stylesheet" href="csss/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -19,7 +19,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Portfolio</a>
+                <a href="#home">THE-Portfolio</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -48,10 +48,10 @@
         <div class="hero-content">
             <h1>Hello, I'm <span class="highlight">Phurinut teaja</span></h1>
             <p class="hero-subtitle">Full Stack Developer?</p>
-            <p class="hero-description">I try my best to create and build a code that woke well and it easier to read them i read it my self.</p>
+            <p class="hero-description">I try my best to create and build a code that work well and it easier for you to read them then myself.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Works</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch With Me</a>
             </div>
         </div>
         <div class="hero-image">
@@ -62,7 +62,7 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">About ME</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>I am a passionate Full Stack Developer with experience in creating web applications using modern technologies. I love solving complex problems and learning new technologies.</p>
@@ -131,36 +131,45 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
+
+    <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="ui">UI/UX</button>
+        </div>
+
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-category="ui">
                     <img src="images/project1.jpg" alt="Project 1">
                     <div class="project-info">
                         <h3>E-commerce Website</h3>
                         <p>A full-stack e-commerce solution built with React and Node.js</p>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-live">Live Demo</a>
                             <a href="#" class="btn btn-small btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="web">
                     <img src="images/project2.jpg" alt="Project 2">
                     <div class="project-info">
                         <h3>Task Management App</h3>
                         <p>A collaborative task management application with real-time updates</p>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-live">Live Demo</a>
                             <a href="#" class="btn btn-small btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="mobile">
                     <img src="images/project3.jpg" alt="Project 3">
                     <div class="project-info">
                         <h3>Weather App</h3>
                         <p>A responsive weather application with location-based forecasts</p>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-live">Live Demo</a>
                             <a href="#" class="btn btn-small btn-secondary">GitHub</a>
                         </div>
                     </div>
@@ -180,15 +189,15 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>your.email@example.com</span>
+                            <span>Phurinut_te67@live.rmutl.ac.th</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+66 12 345 6789</span>
+                            <span>088 254 4567</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Bangkok, Thailand</span>
+                            <span>Chiang Mai, Thailand</span>
                         </div>
                     </div>
                     <div class="social-links">
@@ -215,11 +224,13 @@
 
     <!-- Footer -->
     <footer class="footer">
+    <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+    </button>
         <div class="container">
-            <p>&copy; 2025 Your Name. Software Engineering, RMUTL. All rights reserved.</p>
+            <p>&copy; 2025 Phurinut teaja. Software Engineering, RMUTL. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
